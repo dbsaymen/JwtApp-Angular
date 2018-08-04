@@ -1,0 +1,11 @@
+<div class="container">
+  <table class="table table-striped">
+    <tr>
+      <th>ID</th><th>TasK Name</th>
+    </tr>
+    <tr *ngFor="let t of tasks">
+      <td>{{t.id}}</td>
+      <td>{{t.taskName}}</td>
+    </tr>
+  </table>
+</div>

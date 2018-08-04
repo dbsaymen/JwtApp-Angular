@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+    <form #f="ngForm" (ngSubmit)="addTask(f.value)" >
+      <div class="form-group">
+        <label for="formGroupExampleInput">TaskName:</label>
+        <input ngModel="" type="text" class="form-control" id="formGroupExampleInput" placeholder="TaskName:" name="taskName">
+      </div>
+      <button type="submit" class="btn btn-danger">Add</button>
+    </form>
+  </div>
+  <div class="col-sm-4"></div>
+</div>

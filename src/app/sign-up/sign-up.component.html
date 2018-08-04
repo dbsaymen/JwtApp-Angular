@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+    <form #f="ngForm" (ngSubmit)="addUser(f.value)" >
+      <div class="form-group">
+        <label for="formGroupExampleInput">Username:</label>
+        <input ngModel="" type="text" class="form-control" id="formGroupExampleInput" placeholder="Username:" name="username">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">password:</label>
+        <input ngModel="" type="password" class="form-control" id="passwd" placeholder="password:" name="password">
+        <label for="formGroupExampleInput">Re-password:</label>
+        <input ngModel="" type="password" class="form-control" id="repasswd" placeholder="Re-password:" name="repassword">
+      </div>
+      <button type="submit" class="btn btn-danger">Add</button>
+    </form>
+  </div>
+  <div class="col-sm-4"></div>
+</div>
